@@ -33,9 +33,9 @@
                             <br /> <a href="callto:+97333669208" class="text-white">+973 33669208</a><br />
                             <a href="callto:+97333669207" class="text-white">+973 33669207</a><br />
                             <nav class="nav social social-white mt-4">
-                                <a href="#"><i class="uil uil-twitter"></i></a>
-                                <a href="#"><i class="uil uil-facebook-f"></i></a>
-                                <a href="#"><i class="uil uil-instagram"></i></a>
+                                <a href="https://x.com/frenzel_globe_?t=g8Gt9_qaEdchdy7qqB09ew&s=09" target="_blank"><i class="uil uil-twitter"></i></a>
+                                <a href="https://www.facebook.com/share/1J1QVbx3cn/" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/frenzel_globe_trade/profilecard/?igsh=YWVkcWVnMDkyMXU4" target="_blank"><i class="uil uil-instagram"></i></a>
                             </nav>
                             <!-- /.social -->
                         </div>

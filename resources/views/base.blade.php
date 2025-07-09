@@ -30,9 +30,9 @@
                                 document.write(new Date().getUTCFullYear());
                             </script> Frenzel Globe. <br class="d-none d-lg-block" />All rights reserved.</p>
                         <nav class="nav social social-muted">
-                            <a href="#"><i class="uil uil-twitter"></i></a>
-                            <a href="#"><i class="uil uil-facebook-f"></i></a>
-                            <a href="#"><i class="uil uil-instagram"></i></a>
+                            <a href="https://x.com/frenzel_globe_?t=g8Gt9_qaEdchdy7qqB09ew&s=09" target="_blank"><i class="uil uil-twitter"></i></a>
+                            <a href="https://www.facebook.com/share/1J1QVbx3cn/" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/frenzel_globe_trade/profilecard/?igsh=YWVkcWVnMDkyMXU4" target="_blank"><i class="uil uil-instagram"></i></a>
                         </nav>
                         <!-- /.social -->
                     </div>
