@@ -10,13 +10,14 @@
             </div>
             <div class="grid grid-view projects-masonry">
                 <div class="row g-8 g-lg-10 isotope">
+                    @forelse($products as $key => $item)
                     <div class="project item col-md-6 col-xl-4 workshop">
                         <div class="card shadow-lg">
-                            <figure class="card-img-top itooltip itooltip-aqua" title='<h5 class="mb-0">ARMORED CABLES & SINGLE CORE WIRES</h5>'><a href="{{ route('index') }}"> <img src="{{ asset('/assets/img/products/pro1.svg') }}" alt="ARMORED CABLES & SINGLE CORE WIRES" /></a></figure>
+                            <figure class="card-img-top itooltip itooltip-aqua" title="<h5 class='mb-0'>{{ $item['name'] }}</h5>"><a href="{{ route('index') }}"> <img src='{{ asset("/assets/img/products/$item[img]") }}' alt="{{ $item['name'] }}" /></a></figure>
                             <div class="card-body p-7">
                                 <div class="post-header">
                                     <div class="post-category text-line mb-2 text-aqua">Product</div>
-                                    <h3 class="mb-0">ARMORED CABLES & SINGLE CORE WIRES</h3>
+                                    <h3 class="mb-0">{{ $item['name'] }}</h3>
                                 </div>
                                 <!-- /.post-header -->
                             </div>
@@ -24,82 +25,8 @@
                         </div>
                         <!-- /.card -->
                     </div>
-                    <!-- /.project -->
-                    <div class="project item col-md-6 col-xl-4 product">
-                        <div class="card shadow-lg">
-                            <figure class="card-img-top itooltip itooltip-purple" title='<h5 class="mb-0">CABLE LUGS, GLANDS AND ACCESSORIES</h5>'><a href="{{ route('index') }}"> <img src="{{ asset('/assets/img/products/pro2.svg') }}" alt="CABLE LUGS, GLANDS AND ACCESSORIES" /></a></figure>
-                            <div class="card-body p-7">
-                                <div class="post-header">
-                                    <div class="post-category text-line mb-2 text-purple">Product</div>
-                                    <h3 class="mb-0">CABLE LUGS, GLANDS AND ACCESSORIES</h3>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.project -->
-                    <div class="project item col-md-6 col-xl-4 product">
-                        <div class="card shadow-lg">
-                            <figure class="card-img-top itooltip itooltip-yellow" title='<h5 class="mb-0">NETWORK CABLE (CAT6)</h5>'><a href="{{ route('index') }}"> <img src="{{ asset('/assets/img/products/pro3.svg') }}" alt="NETWORK CABLE (CAT6)" /></a></figure>
-                            <div class="card-body p-7">
-                                <div class="post-header">
-                                    <div class="post-category text-line mb-2 text-yellow">Product</div>
-                                    <h3 class="mb-0">NETWORK CABLE<br />(CAT6)</h3>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.project -->
-                    <div class="project item col-md-6 col-xl-4 workshop">
-                        <div class="card shadow-lg">
-                            <figure class="card-img-top itooltip itooltip-red" title='<h5 class="mb-0">CABLE MARKER</h5>'><a href="{{ route('index') }}"> <img src="{{ asset('/assets/img/products/pro4.svg') }}" alt="CABLE MARKER" /></a></figure>
-                            <div class="card-body p-7">
-                                <div class="post-header">
-                                    <div class="post-category text-line mb-2 text-red">Product</div>
-                                    <h3 class="mb-0">CABLE MARKER</h3>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.project -->
-                    <div class="project item col-md-6 col-xl-4 still-life">
-                        <div class="card shadow-lg">
-                            <figure class="card-img-top itooltip itooltip-orange" title='<h5 class="mb-0">PVC COATED GI FLEXIBLE PIPE</h5>'><a href="{{ route('index') }}"> <img src="{{ asset('/assets/img/products/pro5.svg') }}" alt="PVC COATED GI FLEXIBLE PIPE" /></a></figure>
-                            <div class="card-body p-7">
-                                <div class="post-header">
-                                    <div class="post-category text-line mb-2 text-orange">Product</div>
-                                    <h3 class="mb-0">PVC COATED GI FLEXIBLE PIPE</h3>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.project -->
-                    <div class="project item col-md-6 col-xl-4 product">
-                        <div class="card shadow-lg">
-                            <figure class="card-img-top itooltip itooltip-leaf" title='<h5 class="mb-0">LUGS AND FERRULES</h5>'><a href="{{ route('index') }}"> <img src="{{ asset('/assets/img/products/pro6.svg') }}" alt="LUGS AND FERRULES" /></a></figure>
-                            <div class="card-body p-7">
-                                <div class="post-header">
-                                    <div class="post-category text-line mb-2 text-leaf">Product</div>
-                                    <h3 class="mb-0">LUGS AND FERRULES</h3>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                        <!-- /.card -->
-                    </div>
-                    <!-- /.project -->
+                    @empty
+                    @endforelse
                 </div>
                 <!-- /.row -->
             </div>

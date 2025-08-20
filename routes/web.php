@@ -8,6 +8,6 @@ Route::middleware(['web'])->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/about', 'about')->name('about');
         Route::get('/contact', 'contact')->name('contact');
-        Route::get('/products', 'products')->name('products');
+        Route::get('/products/{category}', 'products')->name('products');
     });
 });

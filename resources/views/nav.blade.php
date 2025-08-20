@@ -19,8 +19,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('about') }}">About Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('products') }}">Products</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="{{ route('products', 'general') }}">General</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="{{ route('products', 'tools') }}">Tools</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="{{ route('products', 'pands') }}">Industrial Plug and Socket</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="{{ route('products', 'gi') }}">GI</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="{{ route('products', 'elcb') }}">ELCB</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>

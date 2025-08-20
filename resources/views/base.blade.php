@@ -43,7 +43,7 @@
                         <h4 class="widget-title ls-sm mb-3">Quick Links</h4>
                         <ul class="list-unstyled text-reset mb-0">
                             <li><a href="{{ route('about') }}">About Us</a></li>
-                            <li><a href="{{ route('products') }}">Products</a></li>
+                            <li><a href="{{ route('products', 'general') }}">Products</a></li>
                             <li><a href="{{ route('contact') }}">Contact Us</a></li>
                         </ul>
                     </div>
