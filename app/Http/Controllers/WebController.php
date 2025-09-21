@@ -41,6 +41,7 @@ class WebController extends Controller
             $products[1] = array('name' => 'CONNECTOR STRIPS', 'img' => 'CONNECTOR STRIPS.jpg');
             $products[2] = array('name' => 'FLEXIBLE PIPE', 'img' => 'FLEXIBLE PIPE.jpg');
             $products[3] = array('name' => 'PVC CONDUIT AND ACCESSORIES', 'img' => 'PVC CONDUIT AND ACCESSORIES.jpg');
+            $products[3] = array('name' => 'PANEL WIRES', 'img' => 'pro1.svg');
         endif;
         if ($category == 'tools'):
             $products[0] = array('name' => 'POWER TOOLS', 'img' => 'POWER TOOLS.jpg');
